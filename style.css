@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkslateblue;
+}
+
+header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.material-icons{
+    font-size: 5rem;
+}
+
+.dynamic_text{
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.dynamic_text::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+}
+
+.just_text{
+    font-size: 0.8rem;
+}
+
